@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+
+:root{  
+    --font-principal: 'Baloo 2', cursive;
+    --font-gg: 'Staatliches';
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: var(--font-principal);
+}
+html{
+    font-size: 62,5%;
+}
+
+body{
+    font-size: 1.6rem;
+}
+
+nav{
+    width: 100vw;
+    height: 80px;
+    background-color: transparent;
+}
+
+.nav_bar{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center ;
+    margin: auto;
+
+    padding: 20px;
+    max-width: 1300px;
+    font-size: 2rem;
+    gap: 40px;
+    
+}
+
+.nav_bar a {
+    color: white;
+}
+
+.nav_bar img{
+    width: 40px;
+    
+}
+
+header{
+    width: 100%;
+   
+    height: 63.7rem;
+    background: linear-gradient( 20deg, rgb(10, 10, 34), rgb(17, 17, 160), rgb(13, 15, 46));
+}
+
+.menu{
+    width: 100%;
+    position: relative;
+}
+
+.content{
+    width: 100%;
+    margin: auto;
+}
+
+#name_bluelock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50rem;
+}
+
+#person_ego{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 38rem;
+    
+    margin: auto;
+}
