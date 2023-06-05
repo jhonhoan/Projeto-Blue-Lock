@@ -32,19 +32,8 @@ body{
     font-size: 1.6rem;
 }
 
-nav{
-    display: flex;
-    overflow: hidden;
-    padding: 20px;
-    max-width: 1200px;
-    width: 100%;
-    height: 80px;
-    margin: auto;
-    background-color: transparent;
-}
-nav img{
+.nav_bar img{
     width: 38px;
-    height: 32px;
 }
 .nav_bar{
     width: 100%;
@@ -75,9 +64,6 @@ header{
     overflow-y: hidden;
    height: 100%;
     background: linear-gradient( 20deg, rgb(10, 10, 34), rgb(17, 17, 160), rgb(13, 15, 46));
-
-
-    
 }
 
 .menu{
@@ -85,7 +71,6 @@ header{
     display: flex;
    
     width: 100%;
-    max-width: 1200px;
     padding: 20px;
     max-height: 576px;
 
@@ -299,4 +284,39 @@ button:hover{
 
 #nagi{
     width: 70px;
+}
+
+@keyframes slideright {
+    from {
+        transform: translateX(500px);
+      
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+#person_ego{
+    animation:slideright 1s ease;
+}
+
+@keyframes slideleft{
+    from{
+        transform: translateX(-300px);
+    }
+}
+
+.info_content{
+    animation: slideleft 2s ease;
+}
+
+@keyframes topdown{
+    from{
+        transform: translateY(-300px);
+    }
+}
+
+.nav_bar{
+    animation: topdown 1s ease;
 }

@@ -1,5 +1,14 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+:root{
+    --font-principal: 'Poppins', sans-serif;;
+    --gradient: linear-gradient(100deg,
+        rgba(255, 255, 255, 0), black, rgba(255, 255, 255, 0)
+    );
+}
 
 *{
     margin: 0;
@@ -10,18 +19,23 @@
     overflow-x: hidden;
 }
 
-
-header{
+body{
     width: 100vw;
     height: 100vh;
     
 }
 
+header{
+    width: 100%;
+    height: 720px;
+    background: linear-gradient(318.28deg, #FFFFFF 66.17%, #2979F0 56.41%);
+    box-shadow: inset 0px 270px 200px  rgba(0, 0, 0, 0.144);
+}
+
 .home{
     width: 100%;
     height: 100%;
-
-    background: linear-gradient(288.8deg, #FFFFFF 71.78%, #23BEEF 11%);
+    overflow-y: hidden;
 }
 
 
@@ -33,37 +47,215 @@ header{
     width: 100%;
     max-width: 1300px;
     height: 60px;
-    gap: 50px;
-    
+    gap: 100px;
+    font-weight: 300;
+}
 
+.nav_bar a{
+    
+    color: black;
+    transition: .5s ease;
+}
+
+.nav_bar a:hover{
+    
+    transition: .3s ease;
+    color: #23BEEF;
 }
 
 .nav_bar img{
     width: 38px;
+    
 }
 
 .content{
+    width: 100%;
+    height: 100%;
     display: flex;
-    align-items: center;
+    justify-content: space-around;
+   
     
 }
 
 .info{
-    align-self: flex-start;
-    padding: 100px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+max-width: 500px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.info_container{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
 .info-main{
+    width: 100%;
     text-align: center;
+    
+    border-width: 1px;
+    border-style: solid;
+    border-image-source: linear-gradient(270deg, #ffffff00 7.01%, #000000 52.38%, #ffffff00 97.75%);
+
+
+}
+
+.info-main h4{
+    font-size: 20px;
+    font-weight: 200;
+    color: #23BEEF;
+}
+.info-main h2{
+    font-size: 35px;
+    font-weight: 300;
+    color: rgb(0, 132, 255);
+}
+.info-main h1{
+    font-weight: 200;
+}
+
+.rin-resume{
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+}
+
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.material-symbols-outlined{
+    font-size: 10px;
+}
+
+.rinimg img{
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+    filter: drop-shadow(58px 4px 2px rgba(0, 0, 0, 0.22));
+}
+
+.nav_info{
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: center;
+
+    padding-right: 50px;
+    gap: 10px;
+}
+li{
+    color: #00A3FF85;
+    transition: .3s ease;
+    padding: 10px;
+}
+li a{
+   color: #00a2ffc0;
+   font-size: 17px;
+   width: 70px;
+   transition: .5s ease;
+   text-align: center;
+}
+
+li a:hover{
+    color: rgba(0, 148, 255, 1);
+    font-size: 30px;
+    
+    transition: .3s ease;
+}
+
+li:hover{
+    color: rgba(0, 148, 255, 1);
+    transition: .3s ease;
+}
+
+.sobre{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background: radial-gradient(#0345a8, rgb(4, 21, 68));
+    overflow: hidden;
+}
+
+.main_character{
+    width: 200px;
+    margin: auto;
+    height: 600px;
+    background: url(../imagens/Rin\ Itoshi_Image\ Gallery.png) center no-repeat;
+    background-size: contain;
     
 }
 
-.rinimg{
-    width: 43%;
-    padding: 20px;
-    
+
+
+@keyframes slideInLeft{
+    from {
+        transform: translateX(-600px);
+        
+    }
+
+    to {
+        transform: translateX(0);
+        
+    }
+
 }
-.rinimg img{
-    width: 100%;
-    margin: auto;
+
+.rinimg{
+    animation: slideInLeft 2s ease 0s  ;
+}
+
+@keyframes topdown {
+    from{
+        transform: translateY(-100px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.nav_bar{
+    animation: topdown 2s ease 0s;
+}
+
+@keyframes topdown-2 {
+    from{
+        filter: blur(50px);
+    }
+
+   
+}
+
+.info_container{
+    animation: topdown-2 1s ease 0s;
+}
+
+@keyframes slideright {
+    from{
+        transform: translateX(600px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.nav_info{
+    animation: slideright 1s ease;
 }
