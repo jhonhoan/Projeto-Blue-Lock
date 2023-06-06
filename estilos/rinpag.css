@@ -220,21 +220,46 @@ li:hover{
 .sobre{
     width: 100%;
     height: 100%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin: auto;
+
+    color: white;
     background: radial-gradient(#0345a8, rgb(4, 21, 68));
     overflow: hidden;
 }
 
 .main_character{
     width: 200px;
-    margin: auto;
+
     height: 600px;
     background: url(../imagens/Rin\ Itoshi_Image\ Gallery.png) center no-repeat;
     background-size: contain;
     
 }
 
+.info_content{
+    width: 500px;
+    text-align: center;
+}
 
+.info_main{
+    text-align: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.info_main h1{
+    font-size: 70px;
+    font-weight: 200;
+}
+
+.info_second{
+    text-align: justify;
+}
 
 @keyframes slideInLeft{
     from {
