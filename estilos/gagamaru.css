@@ -28,8 +28,8 @@ body{
 header{
     width: 100%;
     height: 720px;
-    background: linear-gradient(318.28deg, #FFFFFF 66.17%, #2979F0 56.41%);
-    box-shadow: inset 0px 270px 200px  rgba(0, 0, 0, 0.144);
+    background: linear-gradient(238.28deg, #FFFFFF 66.17%, #29f07c 56.41%);
+    box-shadow: inset 0px 270px 400px  #00000013;
 }
 
 .home{
@@ -60,7 +60,7 @@ header{
 .nav_bar a:hover{
     
     transition: .3s ease;
-    color: #23BEEF;
+    color: #23ef4f;
 }
 
 .nav_bar img{
@@ -72,8 +72,6 @@ header{
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: space-around;
-   
     
 }
 
@@ -85,7 +83,7 @@ header{
     justify-content: center;
 
 max-width: 500px;
-    padding: 20px;
+    padding: 50px;
     gap: 20px;
 }
 
@@ -98,30 +96,25 @@ max-width: 500px;
 .info-main{
     width: 100%;
     text-align: center;
-    
-    border-width: 1px;
-    border-style: solid;
-    border-image-source: linear-gradient(270deg, #ffffff00 7.01%, #000000 52.38%, #ffffff00 97.75%);
-
 
 }
 
 .info-main h4{
     font-size: 20px;
     font-weight: 200;
-    color: #23BEEF;
+    color: #23ef90;
 }
 .info-main h2{
     font-size: 35px;
     font-weight: 300;
-    color: rgb(0, 132, 255);
+    color: rgb(0, 255, 106);
 }
 .info-main h1{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 200;
 }
 
-.rin-resume{
+.gin-resume{
     width: 100%;
     max-width: 400px;
     overflow: hidden;
@@ -130,19 +123,20 @@ max-width: 500px;
 }
 
 .card{
-    width: 100%;
-    max-width: 540px;
-    padding: 20px;
-
+    width: 50%;
+    height: 650px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .icons{
+    width: 200px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    margin: auto;
     gap: 20px;
     cursor: pointer;
 }
@@ -171,129 +165,104 @@ max-width: 500px;
      filter: drop-shadow(0px 0px 4px rgb(238, 255, 0));
      transition: .3s ease;
 }
-
-.rinimg img{
+.ginimg{
     width: 100%;
-    max-width: 540px;
-    margin: auto;
-    padding-bottom: 10px;
-    border-bottom: 1px solid black;
-    filter: drop-shadow(58px 4px 2px #00000038);
+    max-width: 620px;
+    margin-left: -100px;
+    height: 620px;
+    overflow-y: hidden;
+    border-bottom: 1px solid rgb(237, 241, 255);
 }
 
-.nav_info{
-    height: 400px;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: center;
+.ginimg img{
 
-    padding-right: 50px;
-    gap: 10px;
-}
-li{
-    color: #00A3FF85;
-    transition: .3s ease;
-    padding: 10px;
-}
-li a{
-   color: #00a2ffc0;
-   font-size: 17px;
-   width: 70px;
-   transition: .5s ease;
-   text-align: center;
-}
+    width: 100%;
+    max-width: 520px;
+   
 
-li a:hover{
-    color: rgba(0, 148, 255, 1);
-    font-size: 30px;
-    
-    transition: .3s ease;
-}
-
-li:hover{
-    color: rgba(0, 148, 255, 1);
-    transition: .3s ease;
 }
 
 .sobre{
+    display: flex;
+    justify-content: space-between;
+
     width: 100%;
     height: 100%;
-    padding: 20px;
 
+    background: linear-gradient(230deg, rgb(41, 212, 118) 39.6%, white 20%);
+}
+
+.info-container{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
-    margin: auto;
+    justify-content: center;
 
-    color: rgb(0, 0, 0);
-    background: linear-gradient(310deg, #2979F0 40%, #ffffff 30%);
-    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    padding: 20px;
 }
-
-.main_character{
-    width: 200px;
-    height: 800px;
-
-    background: url(../imagens/Rin\ Itoshi_Image\ Gallery.png) center no-repeat;
-    background-size: contain;
-    
-    filter:drop-shadow(10px 0px 10px rgba(0, 0, 0, 0.247));
-}
-
-.info_content{
-    width: 500px;
+.info-h{
     text-align: center;
+    border-bottom: 1px solid black;
 }
-
-.info_main{
-    text-align: center;
-    border-bottom: 1px solid rgb(0, 0, 0);
-    padding: 10px;
-}
-
-.info_main h1{
-    font-size: 70px;
+.info-h h1{
+    width: 100%;
+    font-size: 50px;
     font-weight: 200;
+
 }
 
-.info_second{
-    text-align: justify;
-    line-height: 30px;
-    padding-top: 10px;
+.info-p{
+    width: 100%;
+    text-align: center;
+    padding-top:20px ;
+}
+
+.main-img{
+    display: flex;
+    justify-content: flex-end;
+
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    max-height: 600px;
+}
+
+.main-img img{
+    
+    height: 590px;
 }
 
 .skills{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    
-    height: 100%;
-    max-height: 500px;
-   
+    gap: 40px;
+    width: 100%;
+    max-width: 200px;
+
 }
 
 .skills > p{
     color: white;
 }
 
-
-
 .skills-1{
-    width: 50px;
-    height: 50px;
-
-    background-color: #FFFFFF;
+    background-color: white;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.329);
-
-    margin: auto;
-    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.185);
+    transition: .3s;
 }
 
 .skills-1:hover{
-    box-shadow: 0px 0px 15px rgb(0, 4, 255)
+   transition: .3s;
+    box-shadow: inset 0px 0px 5px rgba(11, 240, 68, 0.473), 0px 0px 10px rgba(11, 240, 68, 0.473);
+    
 }
 
 @keyframes slideInLeft{
@@ -309,7 +278,7 @@ li:hover{
 
 }
 
-.rinimg{
+.ginimg{
     animation: slideInLeft 2s ease 0s  ;
 }
 
@@ -337,18 +306,4 @@ li:hover{
 
 .info_container{
     animation: topdown-2 1s ease 0s;
-}
-
-@keyframes slideright {
-    from{
-        transform: translateX(600px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-.nav_info{
-    animation: slideright 1s ease;
 }
